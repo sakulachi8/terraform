@@ -7,3 +7,8 @@ variable "rg_location" {
   description = "The region of RG"
   default     = "centralus"
 }
+
+
+variable "client_secret" {
+  description = "client_secret"
+}
