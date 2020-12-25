@@ -12,3 +12,4 @@ variable "rg_location" {
 variable "client_secret" {
   description = "client_secret"
 }
+
