@@ -1,5 +1,5 @@
 
-machine_name = "test"
+machine_name = "dev"
 resource_group = machine_name
 rg_location  = "centralus"
 vm_size = "Standard_F2"
