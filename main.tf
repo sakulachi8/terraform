@@ -51,7 +51,8 @@ resource "azurerm_windows_virtual_machine" "basic" {
   ]
 
   tags = {
-    "Owner" = "dev"
+    "Owner" = "dev",
+    "Owner1" = "dev1"
   }
 
   os_disk {
