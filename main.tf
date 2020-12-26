@@ -12,6 +12,7 @@ resource "azurerm_resource_group" "basic" {
   location = var.rg_location
 }
 
+
 resource "azurerm_virtual_network" "basic" {
   name                = azurerm_resource_group.basic.name
   address_space       = ["10.0.0.0/16"]
@@ -39,7 +40,7 @@ resource "azurerm_network_interface" "basic" {
 }
 
 resource "azurerm_windows_virtual_machine" "basic" {
-  name                = "basic-machine"
+  name                = var.machine_name
   resource_group_name = azurerm_resource_group.basic.name
   location            = azurerm_resource_group.basic.location
   size                = var.vm_size
