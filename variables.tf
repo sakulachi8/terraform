@@ -11,13 +11,19 @@ variable "resource_group" {
 }
 
 
+variable "rg_location" {
+  description = "The region of RG"
+  default     = "centralus"
+}
+
 variable "client_secret" {
   description = "The name of your Azure Resource Group."
 }
 
-variable "rg_location" {
-  description = "The region of RG"
-  default     = "centralus"
+
+variable "machine_name" {
+  description = "The name of your Azure Resource Group."
+  default     = "dev-creation-random"
 }
 
 variable "virtual_network_name" {
