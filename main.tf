@@ -50,6 +50,10 @@ resource "azurerm_windows_virtual_machine" "basic" {
     azurerm_network_interface.basic.id,
   ]
 
+  tags = {
+    "Owner" = "dev"
+  }
+
   os_disk {
     caching              = "ReadWrite"
     storage_account_type = var.storage_account_type
